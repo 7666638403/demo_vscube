@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    height: 100vh;
+    background-image: url(https://3.bp.blogspot.com/-_aH19dTiTUs/TsPkfNRn71I/AAAAAAAACvI/xk7sE-lW0wY/s1600/backgrounds-high-resolution-1280x1024-wallpaper-hd-trees.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .hero-section {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+   
+    border-radius: 15%;
+} */
+
+.hero-section {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 25px; /* Makes the element a perfect circle if width and height are equal */
+    background-image: url(http://www.hdwallpaperspulse.com/wp-content/uploads/2013/07/29/hd-wallpaper-free-download-281.jpg); 
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    padding: 0.75rem 2rem;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #FF4500;
+}
+
+section.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    background-image: url(http://www.hdwallpaperspulse.com/wp-content/uploads/2013/07/29/hd-wallpaper-free-download-281.jpg); 
+
+}
+
+.feature-box {
+    width: 30%;
+    background: rgb(253, 255, 125);
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.feature-box i {
+    font-size: 3rem;
+    color: #4b2923;
+}
+
+.feature-box h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.social-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffc0f1;
+}
+
+.social-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #FF6347;
+}
+
+footer {
+    background-color: #7a7a7a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    section.features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+    }
+}

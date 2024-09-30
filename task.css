@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+section {
+    padding: 4% 6%;
+    background-image: url('images/bg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #0e0d0d;
+    padding: 1rem;
+}
+
+.heading i {
+    color: #76a713;
+    font-size: 2rem;
+}
+
+.projects {
+    min-height: 100vh;
+}
+
+.projects .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projects .box-container .thumbnail {
+    flex: 1 1 30rem;
+    height: 22rem;
+    box-shadow: 0 .3rem .5rem #000;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+.projects .box-container .thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects .box-container .thumbnail .icons {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    transform: scale(0);
+}
+
+.projects .box-container .thumbnail:hover .icons {
+    top: 0;
+    transform: scale(1);
+}
+
+.projects .box-container .thumbnail a {
+    font-size: 3rem;
+    color: #fff;
+    margin: 2rem 0;
+    transform: translateY(13rem);
+}
+
+.projects .box-container .thumbnail:hover .icons a {
+    transform: translateY(0);
+}
+
+.text {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #000;
+}
